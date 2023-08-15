@@ -133,6 +133,11 @@ function animate() {
     ctx.fillStyle = 'rgba(255, 255, 255, 0.5)';
     ctx.textAlign = 'center';
     ctx.fillText('Welcome, MnC Guys! Go with The Flow', canvas.width / 2, canvas.height / 2);
+
+    ctx.font = '20px Arial';
+    ctx.fillStyle = 'rgba(255, 255, 255, 0.5)';
+    ctx.textAlign = 'center';
+    ctx.fillText('Made by Mathematics & Computing Dept. ', canvas.width / 2, canvas.height - 20);
     
     requestAnimationFrame(animate);
 }
