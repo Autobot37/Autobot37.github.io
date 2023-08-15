@@ -128,6 +128,12 @@ const effect = new Effect(canvas.width, canvas.height);
 function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas
     effect.render(ctx);
+
+    ctx.font = '48px Arial';
+    ctx.fillStyle = 'rgba(255, 255, 255, 0.5)';
+    ctx.textAlign = 'center';
+    ctx.fillText('Welcome, MnC Guys! Go with The Flow', canvas.width / 2, canvas.height / 2);
+    
     requestAnimationFrame(animate);
 }
 
