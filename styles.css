@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'CustomFont', Arial, sans-serif; /* Use the custom font followed by fallback fonts */
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #F17C58, #E94584, #24AADB, #27DBB1, #FFDC18, #FF3706);
+    background-size: 600% 100%;
+    animation: gradient 16s linear infinite;
+    animation-direction: alternate;
+}
+
+.content {
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-image {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.text {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('path/to/font.ttf') format('truetype'); /* Replace 'path/to/font.ttf' with the path to your font file */
+}
+
+.name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.text a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.text a:hover {
+    text-decoration: underline;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0%
+    }
+
+    100% {
+        background-position: 100%
+    }
+}
